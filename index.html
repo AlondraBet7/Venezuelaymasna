@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- herramientas SEO  -->
+    <meta name="description" content="Formulario de opinión y contacto">
+    <meta name="keywords" content="Opinión y contacto">
+    <title>Venezuela y más'</title>
+    <!-- JQUIERY  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- LINK MAIN JS -->
+    <script src="main.js"></script>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- CDN BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- ENLACE CON CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CDN ANIMATE  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- menu de nav -->
+        <!-- <img class="imagenLogo" src="images/banderaVzla.jpg" alt=""> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark  menu--Fixed">
+            <img class="imagenLogo" src="imagenes/banderaVzla.jpg" alt="">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon btn btn-light"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light seccion--Uno" aria-current="page"
+                                href="index.html">Venezuela</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-light seccion--Dos" aria-current="page"
+                                href="../pages/chavismo.html">Chavismo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light seccion--Tres" href="../pages/emigration.html">Emigración</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light seccion--Cuatro" href="../pages/stories.html">Historias</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-light seccion--Cinco" href="../pages/contact.html">Contacto</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="orden">
+            <h1 class="primer--Titulo">Venezuela tierra de sueños</h1>
+               <!-- carrusel de imegenes bellas de vzla -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/losRoques4.jpg" class="d-block w-100" alt="Los roques">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="tituloCarrusel">Los Roques</h5>
+                        <p class="parrafoCarrusel">Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/saltoAngel3.jpg" class="d-block w-100" alt="Salto Angel">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="tituloCarrusel text-light">Salto Angel</h5>
+                        <p class="parrafoCarrusel text-light">Some representative placeholder content for the second
+                            slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/medanosdeCoro2.jpg" class="d-block w-100" alt="Medanos de Coro">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="tituloCarrusel">Medanos de Coro</h5>
+                        <p class="parrafoCarrusel">Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Refrán-->
+        <div class="col container--Frase">
+            <h2 class="texto--Refran">A ponerse las alpargatas que lo que viene es joropo. Refrán venezolano </h2>
+
+           
+            <img src="images/saltoAngel3.jpg" class="rounded float-start vzla--Linda" alt="...">
+            <img src="images/losRoques4.jpg" class="rounded float-center vzla--Linda posicion" alt="...">
+            <img src="images/medanosdeCoro2.jpg" class="rounded float-end vzla--Linda" alt="...">
+            <div class="text--Vzla">
+                <h2 class="texto--Titulo">Bondades</h2>
+                <p class="texto--Parrafo text-center">Nací en un país lleno de bondades, donde cualquier persona que
+                    llegara del extranjero erra bienvenida con tanto amor que eran un venezolano más, con las reservas de
+                    petróleo más de 300 mil millones de barriles de reservas probadas, actualmente las más grandes del
+                    mundo, con reservas en oro, grandes extensiones de vegetación, grandes reservas de agua Tiene una altura
+                    de 979 metros, de los cuales 807 son de caída ininterrumpida. En pleno Parque Nacional de Canaima,
+                    declarado Patrimonio de la Humanidad en 1994, dulce, enormes exensiones de óceano, llanos, nieve, la
+                    caída de agua más alta del mundo. El relámpago del Catatumbo recibió un récord Guinness en
+                    2013 por la “mayor concentración de relámpagos”, Venezuela es el país con más coronas del Miss Universo
+                    y en el 2009 se convirtió en el único país en obetener dos coronas del Miss Universo de forma
+                    consecutiva Venezuela hace parte de la zona con más biodiversa del
+                    mundo obteniendo un Récord Guinness por la mayor cantidad de especies endémicas, otra parte también por
+                    la arepa más grande
+                    del mundo con la que se alimentaró a 2800 personas, es el segundo país
+                    latinoamericano con más jugadores en las Grandes Ligas.</p>
+            </div>
+            <!-- tarjetas sobre los colores de la bandera -->
+            <div class="card text-dark bg-warning mb-3" style="max-width: 18rem;">
+
+                <!-- tarjetas -->
+                <div class="card-header">Reservas de oro</div>
+                <div class="card-body">
+                    <h5 class="card-title">Warning card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                </div>
+            </div>
+            
+            <div class="card text-dark bg-info mb-3" style="max-width: 18rem;">
+                <div class="card-header">Grandes extensiones de océano</div>
+                <div class="card-body">
+                    <h5 class="card-title">Info card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                </div>
+            </div>
+            <div class="card text-white bg-danger mb-3 float-center" style="max-width: 18rem;">
+                <div class="card-header">La Sangre derramada</div>
+                <div class="card-body">
+                    <h5 class="card-title">Danger card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                </div>
+            </div>
+            <div class="card bg-light mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <h5 class="card-title">Light card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+             </div>
+          
+              
+                 <!-- imagenes con texto alado  -->
+              <div>
+                <img class="caracteristicas--Img" src="images/alegriaVzla.jpg">
+                <p class="texto--Caracteristicas">Un país donde se respira alegría en cada rincón lorem</p>
+              </div>
+              <div>
+                <img class="caracteristicas--Img" src="images/hallacasVzla.jpg">
+                <p class="texto--Caracteristicas">Un país donde la familia es un valor fundamental</p>
+              </div>
+              <div>
+                <img class="caracteristicas--Img" src="images/juanesVzla.jpg">
+                <p class="texto--Caracteristicas">Donde los sabados eran de playa</p>
+              </div>
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+    <footer>
+        <hr id="división">
+        &copy; 2021 Alondra Martínez
+    </footer>
+    <!-- CDN DE FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/42b0028a54.js" crossorigin="anonymous"></script>
+    <!-- SCRIPT BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

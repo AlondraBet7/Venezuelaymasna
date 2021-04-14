@@ -1,0 +1,256 @@
+@import "variables/colors";
+
+* {
+    margin: 3px 10px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+    margin: 0 20px;
+    background-color: $colorUno;
+
+    // estilos menu 
+    header {
+        font-weight: 900;
+        font-size: 20px;
+        width: 100%;
+        height: auto;
+
+
+        .imagenLogo {
+            width: 100px;
+            height: auto;
+            border-radius: 50px;
+            display: flex;
+        }
+
+
+        .navbar {
+            background-color: $colorUno !important;
+            display: block;
+
+            .seccion--Uno {
+                &:hover {
+                    color: $colorDos !important;
+                }
+            }
+
+            .seccion--Dos {
+                &:hover {
+                    color: $colorTres !important;
+                }
+            }
+
+            .seccion--Tres {
+                &:hover {
+                    color: $colorCuatro !important;
+                }
+            }
+
+            .seccion--Cuatro {
+                &:hover {
+                    color: $colorDos !important;
+                }
+            }
+
+            .seccion--Cinco {
+                &:hover {
+                    color: $colorCuatro !important;
+                }
+            }
+        }
+    }
+
+    // sticky
+    //     .menu--Fixed {
+    //         position: fixed;
+    //         z-index: 1000;
+    //         top: 0;
+    //         width: 100%;
+    //         max-width: 2000;
+    //     }
+
+
+    // }
+
+    // .orden {
+    //     z-index: 0;
+    //     margin: 40px 30px;
+    //     display: block;
+    //
+    // seccion venezuela// index
+    // titulo 1
+    .primer--Titulo {
+        font-weight: 900;
+        color: $colorDos;
+        margin: 5% 25% 20%;
+        font-size: 40px;
+        display: inline;
+    }
+
+    // carrusel 
+    // estilos secccion Venezuela
+    // carousel Venezuela
+    .d-block {
+        width: 100%;
+        height: 500px;
+        margin: 0;
+    }
+
+    .tituloCarrusel {
+        color: $colorUno;
+        font-weight: 600;
+    }
+
+    .parrafoCarrusel {
+        color: $colorUno;
+        font-weight: 600;
+    }
+
+    // frase sobre motivante sobre Venezuela 
+    .texto--Refran {
+        font-weight: 900;
+        margin: 50px 50px;
+        color: $colorCinco;
+    }
+
+    // imagenes Vzla
+    .vzla--Linda {
+        width: 350px;
+        height: 200px;
+
+    }
+
+    .posicion {
+        margin: 0 !important;
+    }
+
+    // posicionamiento
+    // .vzla--Lindados{
+    //     padding: 0 10%  !important;
+    // }
+    // texto bondades
+
+    // .text--Vzla {
+    //     float: right;
+
+
+    .texto--Titulo {
+        margin: 50px 300px;
+        color: $colorCinco;
+        font-weight: 600;
+        color: $colorTres;
+        font-size: 40px;
+        display: inline;
+
+    }
+
+    .texto--Parrafo {
+        color: $colorCinco;
+        line-height: 2em;
+    }
+
+    // }
+    // Tarjetas
+    .card {
+        float: left;
+        margin: 30px 120px;
+    }
+
+    // imagenes con texto alado
+    .caracteristicas--Img {
+        width: 300px;
+        height: auto;
+        margin: 40px 70px;
+    }
+
+    .texto--Caracteristicas {
+        font-size: 600;
+        margin: 40px 200px 70px 40px;
+        color: $colorCinco;
+        display: inline-block;
+        vertical-align: center;
+    }
+
+    // .caracteristicas--Img2 {
+    //     width: 300px;
+    //     height: auto;
+    //     margin: 40px 800px;
+
+    // }
+
+    // .texto--Caracteristicas2 {
+    //     font-size: 600;
+    //     margin: 40px 200px 70px 40px;
+    //     color: $colorCinco;
+    //     display: inline-block;
+    //     vertical-align: center;
+    //     clear: left;
+    // }
+    //ESTILOS CHAVISMO
+    //  imagenes sobre el chavismo 
+    .chavismo {
+        display: flex;
+        margin: 20px;
+
+        .img--chavismoUno {
+            border-radius: 30%;
+            height: 400px;
+            width: 400px;
+            margin: 0 100px;
+        }
+
+        .img--chavismoDos {
+            border-radius: 30%;
+            height: 400px;
+            width: 400px;
+            margin: 0 100px;
+            
+        }
+    }
+// ESTILOS EMIGRACION
+ // imagenes de emigracion masiva
+ .seccion--Migracion {
+    display: flex;
+
+    .imgMigracion {
+        border-radius: 30%;
+        width: 350px;
+        height: auto;
+        margin: 0 50px;
+    }
+}
+// ESTILOS CONTACT
+  // pagina seccion contacto
+  .mb-3 {
+    width: 100% !important;
+    height: 70% !important;
+}
+
+.titulo--Form {
+    font-weight: 400;
+    color: $colorDos;
+}
+
+.form {
+    width: 400px !important;
+    margin: 0 400px;
+}
+
+.form--Btn {
+    margin: 0 400px;
+}
+    // estilos footer
+    footer {
+        color: $colorSeis;
+        margin: 10px 550px;
+        display: inline-block;
+
+        #division {
+            max-width: 100%;
+            color: $colorSeis;
+        }
+    }
+}

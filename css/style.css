@@ -1,0 +1,118 @@
+* {
+  margin: 3px 10px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif; }
+
+body {
+  margin: 0 20px;
+  background-color: black; }
+  body header {
+    font-weight: 900;
+    font-size: 20px;
+    width: 100%;
+    height: auto; }
+    body header .imagenLogo {
+      width: 100px;
+      height: auto;
+      border-radius: 50px;
+      display: flex; }
+    body header .navbar {
+      background-color: black !important;
+      display: block; }
+      body header .navbar .seccion--Uno:hover {
+        color: #fdf90d !important; }
+      body header .navbar .seccion--Dos:hover {
+        color: #110dfd !important; }
+      body header .navbar .seccion--Tres:hover {
+        color: #eb0b0b !important; }
+      body header .navbar .seccion--Cuatro:hover {
+        color: #fdf90d !important; }
+      body header .navbar .seccion--Cinco:hover {
+        color: #eb0b0b !important; }
+  body .primer--Titulo {
+    font-weight: 900;
+    color: #fdf90d;
+    margin: 5% 25% 20%;
+    font-size: 40px;
+    display: inline; }
+  body .d-block {
+    width: 100%;
+    height: 500px;
+    margin: 0; }
+  body .tituloCarrusel {
+    color: black;
+    font-weight: 600; }
+  body .parrafoCarrusel {
+    color: black;
+    font-weight: 600; }
+  body .texto--Refran {
+    font-weight: 900;
+    margin: 50px 50px;
+    color: #f3f3f3; }
+  body .vzla--Linda {
+    width: 350px;
+    height: 200px; }
+  body .posicion {
+    margin: 0 !important; }
+  body .texto--Titulo {
+    margin: 50px 300px;
+    color: #f3f3f3;
+    font-weight: 600;
+    color: #110dfd;
+    font-size: 40px;
+    display: inline; }
+  body .texto--Parrafo {
+    color: #f3f3f3;
+    line-height: 2em; }
+  body .card {
+    float: left;
+    margin: 30px 120px; }
+  body .caracteristicas--Img {
+    width: 300px;
+    height: auto;
+    margin: 40px 70px; }
+  body .texto--Caracteristicas {
+    font-size: 600;
+    margin: 40px 200px 70px 40px;
+    color: #f3f3f3;
+    display: inline-block;
+    vertical-align: center; }
+  body .chavismo {
+    display: flex;
+    margin: 20px; }
+    body .chavismo .img--chavismoUno {
+      border-radius: 30%;
+      height: 400px;
+      width: 400px;
+      margin: 0 100px; }
+    body .chavismo .img--chavismoDos {
+      border-radius: 30%;
+      height: 400px;
+      width: 400px;
+      margin: 0 100px; }
+  body .seccion--Migracion {
+    display: flex; }
+    body .seccion--Migracion .imgMigracion {
+      border-radius: 30%;
+      width: 350px;
+      height: auto;
+      margin: 0 50px; }
+  body .mb-3 {
+    width: 100% !important;
+    height: 70% !important; }
+  body .titulo--Form {
+    font-weight: 400;
+    color: #fdf90d; }
+  body .form {
+    width: 400px !important;
+    margin: 0 400px; }
+  body .form--Btn {
+    margin: 0 400px; }
+  body footer {
+    color: #636060;
+    margin: 10px 550px;
+    display: inline-block; }
+    body footer #division {
+      max-width: 100%;
+      color: #636060; }
