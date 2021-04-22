@@ -5,14 +5,14 @@
   font-family: "Source Sans Pro", sans-serif; }
 
 body {
-  background-color: black; }
+  background-color: black;
+  width: 100%; }
   body header {
     margin: 3% 0;
     justify-content: center;
     font-weight: 600;
     position: sticky !important;
     top: 0 !important;
-    width: 100% !important;
     height: auto !important;
     z-index: 3;
     text-align: center; }
@@ -20,7 +20,7 @@ body {
       padding: 0 15%;
       margin: 0 5%;
       font-weight: 600;
-      font-size: 30px;
+      font-size: 20px;
       background-color: black !important;
       float: center;
       display: flex; }
@@ -75,7 +75,7 @@ body {
     font-weight: 600; }
   body .texto--Refran {
     font-weight: 900;
-    font-size: 50px;
+    font-size: 40px;
     margin: 50px 50px;
     text-align: center;
     color: #fdf90d; }
@@ -122,11 +122,11 @@ body {
     margin: 3em 8em; }
     body #tchavismo--Uno .tituloC--Uno {
       font-weight: 900;
-      font-size: 80px;
+      font-size: 40px;
       text-align: center; }
     body #tchavismo--Uno .parrafoC--Uno {
       margin: 2em 0;
-      font-size: 30px;
+      font-size: 25px;
       font-weight: 400;
       line-height: 50px;
       word-spacing: 5px; }
@@ -141,14 +141,14 @@ body {
     display: flex; }
     body .pobreza--Vzla .pobreza--Vzla2 {
       margin: 15px;
-      width: 500px;
+      width: 280px;
       height: auto; }
   body #nuevos--Burgueses {
     margin: 3em 8em;
     display: flex; }
     body #nuevos--Burgueses .burgueses {
       margin: 15px 100px;
-      width: 700px;
+      width: 300px;
       height: auto; }
   body .seccion--Migracion {
     display: flex; }
@@ -157,20 +157,21 @@ body {
       width: 350px;
       height: auto;
       margin: 0 50px; }
-  body .navbar {
-    text-align: center;
+  body .edgar--Ramirez {
+    margin: 15px 50px;
+    width: 280px;
+    height: auto; }
+  body .mb-3 {
+    width: 50% !important;
+    height: 70% !important; }
+  body .titulo--Form {
+    font-weight: 400;
+    color: #fdf90d; }
+  body .form {
+    width: 400px !important;
     margin: 0 400px; }
-    body .navbar .mb-3 {
-      width: 50% !important;
-      height: 70% !important; }
-    body .navbar .titulo--Form {
-      font-weight: 400;
-      color: #fdf90d; }
-    body .navbar .form {
-      width: 400px !important;
-      margin: 0 400px; }
-    body .navbar .form--Btn {
-      margin: 0 400px; }
+  body .form--Btn {
+    margin: 0 400px; }
   body footer {
     font-size: 20px;
     color: #636060;
@@ -178,3 +179,17 @@ body {
     body footer #division {
       width: 100%;
       color: #636060; }
+  @media (max-width: 576px) {
+    body .padre--responsive {
+      width: 100%;
+      position: flex;
+      flex-direction: column;
+      margin: 2% 25%; }
+    body .mb-3 {
+      margin: 0 50px; }
+    body .form-floating {
+      margin: 0 50px; }
+    body .btn--Uno {
+      margin: 0 50px; }
+    body .btn--Dos {
+      margin: 0 20px; } }
