@@ -1,25 +1,40 @@
 * {
-  margin: 3px 10px;
+  margin: 1px;
   padding: 0;
   box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif; }
 
 body {
-  margin: 0 20px;
   background-color: black; }
   body header {
-    font-weight: 900;
-    font-size: 20px;
-    width: 100%;
-    height: auto; }
-    body header .imagenLogo {
-      width: 100px;
-      height: auto;
-      border-radius: 50px;
-      display: flex; }
+    margin: 3% 0;
+    justify-content: center;
+    font-weight: 600;
+    position: sticky !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    z-index: 3;
+    text-align: center; }
     body header .navbar {
+      padding: 0 15%;
+      margin: 0 5%;
+      font-weight: 600;
+      font-size: 30px;
       background-color: black !important;
-      display: block; }
+      float: center;
+      display: flex; }
+      body header .navbar .imagenLogo {
+        width: 150px;
+        height: auto;
+        border-radius: 50px;
+        display: inline; }
+      body header .navbar .nav-link {
+        margin: 0 1.6rem; }
+        body header .navbar .nav-link:hover {
+          display: inline-block;
+          animation: heartBeat;
+          animation-duration: 4s; }
       body header .navbar .seccion--Uno:hover {
         color: #fdf90d !important; }
       body header .navbar .seccion--Dos:hover {
@@ -30,15 +45,27 @@ body {
         color: #fdf90d !important; }
       body header .navbar .seccion--Cinco:hover {
         color: #eb0b0b !important; }
+  body #bienvenidos {
+    margin: 2% 0 !important;
+    background: linear-gradient(to right, rgba(134, 131, 131, 0.609), rgba(8, 8, 8, 0)), url(../images/losRoques4.jpg);
+    width: 100%;
+    height: 800px;
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden; }
   body .primer--Titulo {
-    font-weight: 900;
-    color: #fdf90d;
-    margin: 5% 25% 20%;
-    font-size: 40px;
-    display: inline; }
+    color: black;
+    display: block;
+    font-size: 4em;
+    margin-block-start: 30%;
+    margin-block-end: 0;
+    font-weight: bold;
+    text-align: center; }
   body .d-block {
     width: 100%;
-    height: 500px;
+    height: 600px;
     margin: 0; }
   body .tituloCarrusel {
     color: black;
@@ -48,8 +75,10 @@ body {
     font-weight: 600; }
   body .texto--Refran {
     font-weight: 900;
+    font-size: 50px;
     margin: 50px 50px;
-    color: #f3f3f3; }
+    text-align: center;
+    color: #fdf90d; }
   body .vzla--Linda {
     width: 350px;
     height: 200px; }
@@ -78,19 +107,49 @@ body {
     color: #f3f3f3;
     display: inline-block;
     vertical-align: center; }
-  body .chavismo {
-    display: flex;
-    margin: 20px; }
-    body .chavismo .img--chavismoUno {
-      border-radius: 30%;
-      height: 400px;
-      width: 400px;
-      margin: 0 100px; }
-    body .chavismo .img--chavismoDos {
-      border-radius: 30%;
-      height: 400px;
-      width: 400px;
-      margin: 0 100px; }
+  body #chavismo {
+    margin: 2% 0 !important;
+    background: linear-gradient(to right, rgba(134, 131, 131, 0.609), rgba(8, 8, 8, 0)), url(../images/veinte--Chavismo.jpg);
+    width: 100%;
+    height: 820px;
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden; }
+  body #tchavismo--Uno {
+    color: #f3f3f3;
+    margin: 3em 8em; }
+    body #tchavismo--Uno .tituloC--Uno {
+      font-weight: 900;
+      font-size: 80px;
+      text-align: center; }
+    body #tchavismo--Uno .parrafoC--Uno {
+      margin: 2em 0;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 50px;
+      word-spacing: 5px; }
+      body #tchavismo--Uno .parrafoC--Uno .la--Peste {
+        color: #fdf90d; }
+      body #tchavismo--Uno .parrafoC--Uno .corrupccion--Chavista {
+        color: #eb0b0b; }
+  body #video--Burgueses {
+    text-align: center; }
+  body .pobreza--Vzla {
+    margin: 3em 8em;
+    display: flex; }
+    body .pobreza--Vzla .pobreza--Vzla2 {
+      margin: 15px;
+      width: 500px;
+      height: auto; }
+  body #nuevos--Burgueses {
+    margin: 3em 8em;
+    display: flex; }
+    body #nuevos--Burgueses .burgueses {
+      margin: 15px 100px;
+      width: 700px;
+      height: auto; }
   body .seccion--Migracion {
     display: flex; }
     body .seccion--Migracion .imgMigracion {
@@ -98,21 +157,24 @@ body {
       width: 350px;
       height: auto;
       margin: 0 50px; }
-  body .mb-3 {
-    width: 100% !important;
-    height: 70% !important; }
-  body .titulo--Form {
-    font-weight: 400;
-    color: #fdf90d; }
-  body .form {
-    width: 400px !important;
+  body .navbar {
+    text-align: center;
     margin: 0 400px; }
-  body .form--Btn {
-    margin: 0 400px; }
+    body .navbar .mb-3 {
+      width: 50% !important;
+      height: 70% !important; }
+    body .navbar .titulo--Form {
+      font-weight: 400;
+      color: #fdf90d; }
+    body .navbar .form {
+      width: 400px !important;
+      margin: 0 400px; }
+    body .navbar .form--Btn {
+      margin: 0 400px; }
   body footer {
+    font-size: 20px;
     color: #636060;
-    margin: 10px 550px;
-    display: inline-block; }
+    text-align: center; }
     body footer #division {
-      max-width: 100%;
+      width: 100%;
       color: #636060; }

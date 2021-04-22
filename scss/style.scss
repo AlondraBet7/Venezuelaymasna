@@ -1,35 +1,55 @@
 @import "variables/colors";
 
 * {
-    margin: 3px 10px;
+    margin: 1px;
     padding: 0;
     box-sizing: border-box;
     font-family: "Source Sans Pro", sans-serif;
 }
 
 body {
-    margin: 0 20px;
     background-color: $colorUno;
+
 
     // estilos menu 
     header {
-        font-weight: 900;
-        font-size: 20px;
-        width: 100%;
-        height: auto;
+        margin: 3% 0;
+        justify-content: center;
+        font-weight: 600;
+        position: sticky !important;
+        top: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        z-index: 3;
+        text-align: center;
 
-
-        .imagenLogo {
-            width: 100px;
-            height: auto;
-            border-radius: 50px;
-            display: flex;
-        }
-
-
+        //    OJO CENTRAR MENU
         .navbar {
+            padding: 0 15%;
+            margin: 0 5%;
+            font-weight: 600;
+            font-size: 30px;
             background-color: $colorUno !important;
-            display: block;
+            float: center;
+            display: flex;
+
+            .imagenLogo {
+                width: 150px;
+                height: auto;
+                border-radius: 50px;
+                display: inline;
+            }
+
+            .nav-link {
+                margin: 0 1.6rem;
+
+                &:hover {
+                    display: inline-block;
+                    animation: heartBeat;
+                    animation-duration: 4s;
+                }
+            }
+
 
             .seccion--Uno {
                 &:hover {
@@ -63,15 +83,17 @@ body {
         }
     }
 
-    // sticky
+
+
+
+
     //     .menu--Fixed {
     //         position: fixed;
     //         z-index: 1000;
     //         top: 0;
-    //         width: 100%;
+    //         //         width: 100%;
     //         max-width: 2000;
     //     }
-
 
     // }
 
@@ -79,15 +101,33 @@ body {
     //     z-index: 0;
     //     margin: 40px 30px;
     //     display: block;
-    //
+    // }
+
     // seccion venezuela// index
+    // imagen con transparencia
+
+    #bienvenidos {
+        margin: 2% 0 !important;
+        background: linear-gradient(to right, rgba(134, 131, 131, 0.609), rgba(8, 8, 8, 0)), url(../images/losRoques4.jpg);
+        width: 100%;
+        height: 800px;
+        background-size: 100% 100vh;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        position: relative;
+        overflow: hidden;
+
+    }
+
     // titulo 1
     .primer--Titulo {
-        font-weight: 900;
-        color: $colorDos;
-        margin: 5% 25% 20%;
-        font-size: 40px;
-        display: inline;
+        color: $colorUno;
+        display: block;
+        font-size: 4em;
+        margin-block-start: 30%;
+        margin-block-end: 0;
+        font-weight: bold;
+        text-align: center;
     }
 
     // carrusel 
@@ -95,7 +135,7 @@ body {
     // carousel Venezuela
     .d-block {
         width: 100%;
-        height: 500px;
+        height: 600px;
         margin: 0;
     }
 
@@ -112,8 +152,10 @@ body {
     // frase sobre motivante sobre Venezuela 
     .texto--Refran {
         font-weight: 900;
+        font-size: 50px;
         margin: 50px 50px;
-        color: $colorCinco;
+        text-align: center;
+        color: $colorDos;
     }
 
     // imagenes Vzla
@@ -191,66 +233,148 @@ body {
     // }
     //ESTILOS CHAVISMO
     //  imagenes sobre el chavismo 
-    .chavismo {
+    #chavismo {
+        margin: 2% 0 !important;
+        background: linear-gradient(to right, rgba(134, 131, 131, 0.609), rgba(8, 8, 8, 0)), url(../images/veinte--Chavismo.jpg);
+        width: 100%;
+        height: 820px;
+        background-size: 100% 100vh;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        position: relative;
+        overflow: hidden;
+
+    }
+
+    #tchavismo--Uno {
+        color: $colorCinco;
+        margin: 3em 8em;
+
+
+        .tituloC--Uno {
+            font-weight: 900;
+            font-size: 80px;
+            text-align: center;
+        }
+
+        .parrafoC--Uno {
+            margin: 2em 0;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 50px;
+            word-spacing: 5px;
+
+            .la--Peste {
+                color: $colorDos;
+            }
+
+            .corrupccion--Chavista {
+                color: $colorCuatro;
+
+            }
+        }
+    }
+
+    #video--Burgueses {
+        text-align: center;
+    }
+
+    .pobreza--Vzla {
+        margin: 3em 8em;
         display: flex;
-        margin: 20px;
 
-        .img--chavismoUno {
-            border-radius: 30%;
-            height: 400px;
-            width: 400px;
-            margin: 0 100px;
-        }
-
-        .img--chavismoDos {
-            border-radius: 30%;
-            height: 400px;
-            width: 400px;
-            margin: 0 100px;
-            
+        .pobreza--Vzla2 {
+            margin: 15px;
+            width: 500px;
+            height: auto;
         }
     }
-// ESTILOS EMIGRACION
- // imagenes de emigracion masiva
- .seccion--Migracion {
-    display: flex;
 
-    .imgMigracion {
-        border-radius: 30%;
-        width: 350px;
-        height: auto;
-        margin: 0 50px;
+    #nuevos--Burgueses {
+        margin: 3em 8em;
+        display: flex;
+
+        .burgueses {
+            margin: 15px 100px;
+            width: 700px;
+            height: auto;
+           
+        }
     }
-}
-// ESTILOS CONTACT
-  // pagina seccion contacto
-  .mb-3 {
-    width: 100% !important;
-    height: 70% !important;
-}
 
-.titulo--Form {
-    font-weight: 400;
-    color: $colorDos;
-}
 
-.form {
-    width: 400px !important;
-    margin: 0 400px;
-}
 
-.form--Btn {
-    margin: 0 400px;
-}
+    // .chavismo {
+    //     display: flex;
+    //     margin: 20px;
+
+    //     .img--chavismoUno {
+    //         border-radius: 30%;
+    //         height: 400px;
+    //         width: 400px;
+    //         margin: 0 100px;
+    //     }
+
+    //     .img--chavismoDos {
+    //         border-radius: 30%;
+    //         height: 400px;
+    //         width: 400px;
+    //         margin: 0 100px;
+
+    //     }
+    // }
+
+    // ESTILOS EMIGRACION
+    // imagenes de emigracion masiva
+    .seccion--Migracion {
+        display: flex;
+
+        .imgMigracion {
+            border-radius: 30%;
+            width: 350px;
+            height: auto;
+            margin: 0 50px;
+        }
+    }
+
+    // ESTILOS CONTACT
+    // pagina seccion contacto
+    .navbar{
+        text-align: center;
+        margin: 0 400px;
+        .mb-3 {
+            width: 50% !important;
+            height: 70% !important;
+        }
+    
+        .titulo--Form {
+            font-weight: 400;
+            color: $colorDos;
+        }
+    
+        .form {
+            width: 400px !important;
+            margin: 0 400px;
+        }
+    
+        .form--Btn {
+            margin: 0 400px;
+        }
+    
+    }
+   
+
     // estilos footer
     footer {
+        font-size: 20px;
         color: $colorSeis;
-        margin: 10px 550px;
-        display: inline-block;
+        text-align: center;
 
         #division {
-            max-width: 100%;
+            // border:30px;
+            width: 100%;
             color: $colorSeis;
+            // padding: 5px 0;
         }
     }
 }
