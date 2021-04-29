@@ -5,12 +5,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Source Sans Pro", sans-serif;
-
 }
 
 body {
-    background-color: $colorUno;
+    background-color: $colorSiete;
     width: 100%;
+
 
     // estilos menu 
     header {
@@ -30,7 +30,7 @@ body {
             margin: 0 5%;
             font-weight: 600;
             font-size: 20px;
-            background-color: $colorUno !important;
+            background-color: $colorSiete !important;
             float: center;
             display: flex;
 
@@ -84,10 +84,6 @@ body {
         }
     }
 
-
-
-
-
     //     .menu--Fixed {
     //         position: fixed;
     //         z-index: 1000;
@@ -104,36 +100,64 @@ body {
     //     display: block;
     // }
 
-    // seccion venezuela// index
-    // imagen con transparencia
+    // SECCION VENEZUELA 
 
+    // IMAGEN CON TRANSPARENCIA
     #bienvenidos {
         margin: 2% 0 !important;
-        background: linear-gradient(to right, rgba(134, 131, 131, 0.609), rgba(8, 8, 8, 0)), url(../images/losRoques4.jpg);
-        width: 100%;
-        height: 800px;
+        background: linear-gradient(to right, rgba(94, 90, 90, 0.609), rgba(0, 0, 0, 0)), url(../images/losRoques4.jpg);
+        width: 100% !important;
+        height: 500px;
         background-size: 100% 100vh;
         background-attachment: fixed;
         background-repeat: no-repeat;
         position: relative;
         overflow: hidden;
-
     }
 
-    // titulo 1
+    // TITULO UNO
     .primer--Titulo {
         color: $colorUno;
         display: block;
         font-size: 4em;
-        margin-block-start: 30%;
-        margin-block-end: 0;
+        margin-block-start: 25%;
+        margin-block-end: 10%;
         font-weight: bold;
         text-align: center;
     }
 
-    // carrusel 
-    // estilos secccion Venezuela
-    // carousel Venezuela
+    // TARJETA E IMAGEN
+    .noChavez {
+        display: flex !important;
+
+        .tarjeta--Ensueño {
+            margin: 10vh 0 !important;
+            width: 490px !important;
+            height: 490px !important;
+
+
+            .titulo--Ensueño {
+                font-weight: 900;
+                font-size: 40px;
+                text-align: center;
+            }
+
+            .parrafo--Ensueño {
+                font-size: 17px;
+                text-align: justify;
+                word-wrap: break-word;
+                overflow: hidden;
+            }
+
+            .imagen--Ensueño {
+                height: 80vh;
+                width: auto;
+                margin: 20vh 10vh;
+            }
+        }
+    }
+
+    // CARRUSEL VENEZUELA
     .d-block {
         width: 100%;
         height: 600px;
@@ -150,7 +174,19 @@ body {
         font-weight: 600;
     }
 
-    // frase sobre motivante sobre Venezuela 
+    //  TARJETAS 
+
+    // .tarjetas--Turismo {
+    //     display: flex !important;
+
+    //     .imagen--Turismo {
+    //         width: auto !important;
+    //         height: 200vh !important;
+    //         margin: 0 !important;
+    //     }
+    // }
+
+    // FRASE VENEZOLANOS
     .texto--Refran {
         font-weight: 900;
         font-size: 40px;
@@ -159,16 +195,30 @@ body {
         color: $colorDos;
     }
 
+    // ESTILOS IMAGENES GENERALES
+    .img--Generales {
+        margin: 3em 8em;
+        display: flex;
+
+
+        .img--G {
+            border-radius: 25px;
+            margin: 15px 30px;
+            width: 300px;
+            height: auto;
+        }
+    }
+
     // imagenes Vzla
-    .vzla--Linda {
-        width: 350px;
-        height: 200px;
+    // .vzla--Linda {
+    //     width: 350px;
+    //     height: 200px;
 
-    }
+    // }
 
-    .posicion {
-        margin: 0 !important;
-    }
+    // .posicion {
+    //     margin: 0 !important;
+    // }
 
     // posicionamiento
     // .vzla--Lindados{
@@ -180,27 +230,27 @@ body {
     //     float: right;
 
 
-    .texto--Titulo {
-        margin: 50px 300px;
-        color: $colorCinco;
-        font-weight: 600;
-        color: $colorTres;
-        font-size: 40px;
-        display: inline;
+    // .texto--Titulo {
+    //     margin: 50px 300px;
+    //     color: $colorCinco;
+    //     font-weight: 600;
+    //     color: $colorTres;
+    //     font-size: 40px;
+    //     display: inline;
 
-    }
+    // }
 
-    .texto--Parrafo {
-        color: $colorCinco;
-        line-height: 2em;
-    }
+    // .texto--Parrafo {
+    //     color: $colorCinco;
+    //     line-height: 2em;
+    // }
 
     // }
     // Tarjetas
-    .card {
-        float: left;
-        margin: 30px 120px;
-    }
+    // .card {
+    //     float: left;
+    //     margin: 30px 120px;
+    // }
 
     // imagenes con texto alado
     .caracteristicas--Img {
@@ -233,7 +283,14 @@ body {
     //     clear: left;
     // }
     //ESTILOS CHAVISMO
+
+    // Definicion del fondo chavismo
+
     //  imagenes sobre el chavismo 
+    // #fondo--Chavismo {
+    // background-color: $colorOcho; OJO COLOR ATRACTIVO
+    // }
+
     #chavismo {
         margin: 2% 0 !important;
         background: linear-gradient(to right, rgba(134, 131, 131, 0.609), rgba(8, 8, 8, 0)), url(../images/veinte--Chavismo.jpg);
@@ -244,52 +301,6 @@ body {
         background-repeat: no-repeat;
         position: relative;
         overflow: hidden;
-
-    }
-
-    #tchavismo--Uno {
-        color: $colorCinco;
-        margin: 3em 8em;
-
-
-        .tituloC--Uno {
-            font-weight: 900;
-            font-size: 40px;
-            text-align: center;
-        }
-
-        .parrafoC--Uno {
-            margin: 2em 0;
-            font-size: 25px;
-            font-weight: 400;
-            line-height: 50px;
-            word-spacing: 5px;
-
-            .la--Peste {
-                color: $colorDos;
-            }
-
-            .corrupccion--Chavista {
-                color: $colorCuatro;
-
-            }
-        }
-    }
-
-    #video--Burgueses {
-        text-align: center;
-    }
-
-    .pobreza--Vzla {
-        margin: 3em 8em;
-        display: flex;
-
-
-        .pobreza--Vzla2 {
-            margin: 15px;
-            width: 300px;
-            height: auto;
-        }
     }
 
     #nuevos--Burgueses {
@@ -304,7 +315,46 @@ body {
         }
     }
 
+    // ESTILOS TEXTOS GENERALES
+    .textos--Varios {
+        color: $colorCinco;
+        margin: 3em 8em;
 
+
+        .titulos--Varios {
+            font-weight: 900;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .parrafos--Varios {
+            margin: 3em 0;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 50px;
+            word-spacing: 5px;
+            text-align: justify;
+
+
+            .letras--Amarillas {
+                color: $colorDos;
+            }
+
+            .letras--Azules {
+                color: $colorTres;
+            }
+
+            .letras--Rojas {
+                color: $colorCuatro;
+
+            }
+        }
+    }
+
+    // ESTILOS VIDEOS
+    .video--Pag {
+        text-align: center;
+    }
 
     // .chavismo {
     //     display: flex;
@@ -339,17 +389,51 @@ body {
         }
     }
 
-    // ESTILOS HISTORIAS 
 
-    .edgar--Ramirez {
-        margin: 15px 50px;
-        width: 280px;
-        height: auto;
+    // SECCION HISTORIA
+    .venezolanos {
+        margin: 3em 8em;
+        display: flex;
+        justify-content: center;
+
+
+        .venezolanos--R {
+            border-radius: 30%;
+            margin: 0 50px;
+            width: 300px;
+            height: auto;
+        }
     }
 
-
     // ESTILOS CONTACT
-    // pagina seccion contacto
+    // // pagina seccion contacto
+
+    // .contacto {
+    //     display: flex !important;
+    //     position: relative;
+
+    //     .posicionUno {
+    //         float: left;
+    //         width: 50%;
+    //         height: auto;
+    //     }
+
+    //     .posicionDos {
+    //         float: right;
+    //     }
+    // }
+
+
+
+
+    // .imgContac {
+
+    // }
+
+    .form--Contac {
+        float: right !important;
+    }
+
 
 
     .mb-3 {
@@ -371,6 +455,11 @@ body {
         margin: 0 400px;
     }
 
+    .botones {
+        display: flex;
+    }
+
+
 
 
     // estilos footer
@@ -386,39 +475,48 @@ body {
             // padding: 5px 0;
         }
     }
+}
 
-    // @media screen and (max-width: 576px) and (min-width: 480px) {
-    //     body {
-    //         margin: 1px;
-    //         max-width: 576px;
+// @media screen and (max-width: 576px) and (min-width: 480px) {
+//     body {
+//         margin: 1px;
+//         max-width: 576px;
 
-    //         .pobreza--Vzla2 {
-    //             width: 40%;
-    //         }
-    //     }
-    // }
-    @media (max-width: 576px) {
-        .padre--responsive {
-            width: 100%;
-            position: flex;
-            flex-direction: column;
-            margin: 2% 25%;
-        }
+//         .pobreza--Vzla2 {
+//             width: 40%;
+//         }
+//     }
+// }
+@media (max-width: 576px) {
+    .padre--responsive {
+        width: 100%;
+        position: flex;
+        flex-direction: column;
+        margin: 2% 25%;
+    }
 
-        .mb-3 {
-            margin: 0 50px;
-        }
+    .mb-3 {
+        margin: 0 50px;
+    }
 
-        .form-floating {
-            margin: 0 50px;
-        }
+    .form-floating {
+        margin: 0 50px;
+    }
 
-        .btn--Uno {
-            margin: 0 50px;
-        }
+    .btn--Uno {
+        margin: 0 50px;
+    }
 
-        .btn--Dos {
-            margin: 0 20px;
-        }
+    .btn--Dos {
+        margin: 0 20px;
+    }
+
+    .imagen--Ensueño {
+        display: none;
+    }
+
+    .tarjeta--Ensueño {
+        width: 100% !important;
+        height: auto;
     }
 }
