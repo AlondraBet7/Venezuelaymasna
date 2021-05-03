@@ -17,15 +17,14 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- ENLACE CON CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- CDN ANIMATE  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- AOS Animations CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css " />
 </head>
 
 <body>
     <header>
         <!-- menu de nav -->
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-
             <div class="container">
                 <!-- <img class="imagenLogo" src="images/vzla--Pag.png" alt=""> -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -59,292 +58,168 @@
             </div>
         </nav>
     </header>
-
     <main>
-
         <div id="bienvenidos">
-            <div class="textos animate__animated animate__zoomIn">
-                <h1 class="primer--Titulo">Venezuela, ¡tierra de gracias!</h1>
+            <div class="textos">
+                <h1 class="primer--Titulo tresponsive-Inicio" data-aos="zoomIn">Venezuela, ¡tierra de gracias!</h1>
             </div>
-            <!-- <div class="animate__animated animate__bounceInLeft">
-                <img  src="images/amandolo.svg" alt="">
-            </div> -->
         </div>
         <div class="container noChavez">
             <div class="row">
                 <div class="col">
-                    <img class="imagen--Ensueño wow backInLeft" src="images/amandolo.svg" alt="">
+                    <img class="imagen--Ensueño" data-aos="fade-left" src="images/amandolo.svg" alt="">
                 </div>
                 <div class="col">
-                    <div class="card text-dark bg-warning mb-3 tarjeta--Ensueño">
-                        <div class="card-header titulo--Ensueño"> <strong>Sólo se ve a Chavéz</strong></div>
+                    <div class="card text-dark bg-warning mb-3 tarjeta--Ensueño" data-aos="fadeInRight">
+                        <div class="card-header titulo--Ensueño"> <strong>La Venezuela Saudita</strong></div>
                         <div class="card-body parrafo--Ensueño">
-                            <!-- <p class="card-text parrafo--Ensueño">Nací en un país lleno de bondades, donde cualquier persona que
-                            llegara del extranjero erra bienvenida con tanto amor que eran un venezolano más, con las -->
-                            Y Venezuela no es Chavéz, sino más bien es el país con las reservas de
-                            petróleo más grandes del mundo, hasta ahora son 300 mil millones de barriles de
-                            reservas probadas,
-                            por otro lado cuenta con reservas en oro, hierro, cobre, bauxita, carbón, níquel,
-                            coltan, diamante,
-                            zinc y titanio. También goza del Salto Angel, ubicado en el Parque Nacional Canaima,
-                            el cual fue
-                            considerado en 1994, la caída de agua más alta del mundo con 979 metros, de los
-                            cuales 807 son de
-                            caída ininterrumpida. Pero el Dios del trueno no podía verse eximido de ésta nación
-                            y es así como en
-                            la ciudad de Maracaibo el relámpago del Catatumbo recibió un récord Guinness en
-                            2013 por la “mayor concentración de relámpagos”. Y no bastando con todo esto
-                            Venezuela hace parte de
-                            la zona con más
-                            biodiversa del
-                            mundo obteniendo un Récord Guinness por la mayor cantidad de especies endémicas.
-                            <!-- otra parte
-                            también por
-                            la arepa más grande
-                            del mundo con la que se alimentaró a 2800 personas.</p> -->
+                           Entre los 50 y 80 conocido cómo el millonario de América, Venezuela es un país que está lleno de riquezas naturales y
+                            socioeconómicas, un paraíso tropical con hoteles de primera, importantes autopistas, una
+                            moderma infraestructura que incluye <strong> los edificios más altos y modernos de latinoamérica</strong>,
+                            pero sobretodo un país que goza de buenos salarios y un gran estilo de vida, motivo por el
+                            cual millones de emigrantes latinos y europeos, procedentes de España, Portugal, Chile,
+                            Colombia, Argentina, Ecuador y otros países vecinos llegan cada año a Venezuela con el sueño de trabajar por
+                            temporadas y así poder llevar dinero de Venezuela a sus familias en sus países de origen. <strong>¡BIENVENIDOS
+                            AL PAIS DE DONDE NINGÚN VENEZOLANO QUIERE SALIR Y AL CUAL PERSONAS DE TODO EL MUNDO QUIERE
+                            VISITAR!</strong> Parece mentira que estuviésmos hablando de la Venezuela que conocemos hoy.
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- </div>
-            </div>
-            <div class="animate__animated animate__bounceInLeft muñe--Inicio">
-               
-            </div>
-            -->
-        <div class="justify">
-            <!-- <h1 class="primer--Titulo">Venezuela tierra de sueños</h1> -->
-            <!-- carrusel de imegenes bellas de vzla -->
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/pico--Bolivar2.jpg" class="d-block w-100" alt="Los roques">
-                        <div class="carousel-caption d-none d-md-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/saltoAngel3.jpg" class="d-block w-100" alt="Salto Angel">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/medanosdeCoro2.jpg" class="d-block w-100" alt="Medanos de Coro">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            <!-- TURISMO -->
-            <div class="textos--Varios">
-                <h1 class="titulos--Varios">Tesoro en tierra</h1>
-                <p class="parrafos--Varios"> Un país con turismo por explotar, es que apesar de no contar
-                    con extensiones
-                    de tierra tan grandes como Barsil, nos puede ofrecer varios tipos de climas y opcciones,
-                    entre las
-                    cuales están el pasar un finde semana en alguna finca de los llanos rodedos de <strong
-                        class="letras--Amarillas">carne en vara</strong> y chinchorros, o ir a Falcón y
-                    visitar las grandes
-                    extensiones de desierto para luego bañarte en una playa idílica, también puedes ir a los
-                    Andes, y
-                    así experimentar bajas temperaturas y hasta jugar con la nieve en nuestro <strong
-                        class="letras--Amarillas">pico Bolívar</strong>, si te animas a la selva te podemos
-                    invitar a nuestro
-                    <strong class="letras--Amarillas">estado Amazonas</strong> para que puedas viajar por
-                    nuetro gran río
-                    Orinoco, pero por si te pinta una ciudad salsera te inivitamos a Caracas rodeada de una
-                    montaña
-                    hermosa, pero no basta con todo esto si quieres ir a una isla en medio de la nada,
-                    <strong class="letras--Amarillas">Los Roques</strong> es tu opcción CHORONI.
-                </p>
-            </div>
-            <!-- TURISMO IMG -->
-            <div class="img--Generales padre--responsive">
-                <img src="images/amazona.jpg" class="img--G" alt="...">
-                <img src="images/choroni.jpg" class="img--G" alt="...">
-                <img src="images/andes--Vzla.jpg" class="img--G" alt="...">
-            </div>
-            <!-- <div class="container-fluid">
-                <div class="row d-flex justify-content-around">
-                    <div class="col-12 col-lg-2">
-                        <div class="card tarjetas" style="width: 20rem;">
-                            <img src="images/llanos--Vzla.jpg" class="card-img-top imagen--Turismo vw-70 vh-90"
-                                alt="...">
-                            <div class="card-body">
-                                <p clSass="card-text fw-bolder">Llanos de Venezuela.</p>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/pico--Bolivar2.jpg" class="d-block w-100" alt="Los roques">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/saltoAngel3.jpg" class="d-block w-100" alt="Salto Angel">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/medanosdeCoro2.jpg" class="d-block w-100" alt="Medanos de Coro">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-lg-2">
-                        <div class="card tarjetas" style="width: 20rem;">
-                            <img src="images/amazona.jpg" class="card-img-top imagen--Turismo vw-70 vh-90" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Selva Amazónica.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-2">
-                        <div class="card tarjetas" style="width: 20rem;">
-                            <img src="images/choroni.jpg" class="card-img-top imagen--Turismo vw-70 vh-90" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Andes Venezolanos.</p>
-                            </div>
-                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
-            </div> -->
-            <!-- Refrán-->
-
-            <!-- <h2 class="texto--Refran wow backInDown">Pero ya va, ¿Y cómo son los Venezolanos?</h2> -->
-            <div class="textos--Varios">
-                <h1 class="titulos--Varios">Un pais que abunda la alegría</h1>
-                <p class="parrafos--Varios"> El venezolano es un gentilicio que en cada esquina tiene un
-                    amigo, sus abuelos se sientas en la calle con su respectiva silla de mimbre a conversar
-                    entre amigos, donde el dominó implicitamente es el juego nacional, donde es una
-                    tradición familiar reunirse los días previos a <strong class="letras--Amarillas">navidad</strong> a
-                    hacer las deseadas hallacas, acompañada
-                    de un proceso minucioso donde cada una integrante de la familia es una parte fundamental
-                    y activa del proceso de creación. Donde los viajes a la playa en familia son más comunes
-                    que la tristezas.
-                    <br>
-                    <strong class="letras--Amarillas">Un país donde el panadero era portugués, el
-                        comerciante sirio, árabe o colombiano, los dueños de los supermercados eran
-                        chinos,etc.</strong> Un país donde la peor cosa que puedes decir es un chinazo, pero
-                    los panas siempre los esperan para reírse con ganas. Un país que lo detiene por completo
-                    un partido de beisbol, que siente polar cómo una marca familiar, al sonido de guaco y
-                    vos veis. Un país que cree en Dios desde cada rincón, un país donde las risas son el
-                    sound train de cada calle.
-                </p>
             </div>
-            <div class="img--Generales padre--responsive">
-                <img src="images/alegria--Venezolano.jpg" class="img--G" alt="...">
-                <img src="images/alegriaVzla.jpg" class="img--G" alt="...">
-                <img src="images/alegria--Venezolanos4.jpg" class="img--G" alt="...">
-            </div>
-            <h2 class="texto--Refran wow backInDown">Por esto y mucho más, aunque nuestro país ahora pasa
-                por un momento muy díficil, somos mucho más que eso</h2>
-            <div class="textos--Varios">
-                <h1 class="titulos--Varios">Nuestra gente</h1>
-                <p class="parrafos--Varios ">Y es que en medio de nuestra gente te sentirás acogido, <strong
-                        class="letras--Amarillas">lleno de amor,</strong> y aquí va un toque de experiencia
-                    personal, yo soy Alondra Martínez, si, si, la que diseño ésta web, emigré hace
-                    aproximadamente 4 años, el año pasado de tanto extrañar decidí hacer un viaje <strong
-                        class="letras--Amarillas">navidad</strong> a mi país y a tí que no lo conoces y atí
-                    que emigraste hace años y no has vuelto, quiero decirte que me impactó cada sonrisa que
-                    descubrí en cada rincón, es increíble, ver a la gente por las calles.</p>
-            </div>
+        </div>
+        <!-- TURISMO -->
+        <div class="textos--Varios">
+            <h1 class="titulos--Varios">No todo es crisis</h1>
+            <p class="parrafos--Varios"> Venezuela cuenta con varios tipos de climas y opcciones,
+                entre las
+                cuales están el pasar un fin de semana en alguna finca de los llanos rodedos de <strong
+                    class="letras--Amarillas">carne en vara</strong> y chinchorros, o ir a Falcón y
+                visitar las grandes
+                extensiones de desierto para luego bañarte en una playa idílica, también puedes ir a los
+                Andes, y
+                así experimentar bajas temperaturas y hasta jugar con la nieve en nuestro <strong
+                    class="letras--Amarillas">pico Bolívar</strong>, si te animas a la selva te podemos
+                invitar a nuestros
+                <strong class="letras--Amarillas">estados Bolívar y Amazonas</strong> para que puedas viajar por
+                nuetro gran río
+                Orinoco, visitar nuestro Salto Angel o nuestra Gran Sabana, pero por si te pinta una ciudad salsera te inivitamos a Caracas rodeada de una
+                montaña
+                hermosa y muy cercana al mar, sin embargo no bastando con todo esto si quieres ir a una isla en medio de la nada,
+                <strong class="letras--Amarillas">Los Roques</strong> son tu opcción.
+            </p>
+        </div>
 
-            <!-- <div class="text--Vzla">
-                <h2 class="texto--Titulo">Bondades</h2>
-                <p class="texto--Parrafo text-center">Nací en un país lleno de bondades, donde cualquier persona que
-                    llegara del extranjero erra bienvenida con tanto amor que eran un venezolano más, con las
-                    reservas de
-                    petróleo más de 300 mil millones de barriles de reservas probadas, actualmente las más grandes
-                    del
-                    mundo, con reservas en oro, grandes extensiones de vegetación, grandes reservas de agua Tiene
-                    una altura
-                    de 979 metros, de los cuales 807 son de caída ininterrumpida. En pleno Parque Nacional de
-                    Canaima,
-                    declarado Patrimonio de la Humanidad en 1994, dulce, enormes exensiones de óceano, llanos,
-                    nieve, la
-                    caída de agua más alta del mundo. El relámpago del Catatumbo recibió un récord Guinness en
-                    2013 por la “mayor concentración de relámpagos”, Venezuela es el país con más coronas del Miss
-                    Universo
-                    y en el 2009 se convirtió en el único país en obetener dos coronas del Miss Universo de forma
-                    consecutiva Venezuela hace parte de la zona con más biodiversa del
-                    mundo obteniendo un Récord Guinness por la mayor cantidad de especies endémicas, otra parte
-                    también por
-                    la arepa más grande
-                    del mundo con la que se alimentaró a 2800 personas, es el segundo país
-                    latinoamericano con más jugadores en las Grandes Ligas.</p>
-            </div> -->
-            <!-- tarjetas sobre los colores de la bandera -->
-            <!-- <div class="card text-dark bg-warning mb-3" style="max-width: 18rem;"> -->
-
-            <!-- tarjetas -->
-            <!-- <div class="card-header">Reservas de oro</div>
-                <div class="card-body">
-                    <h5 class="card-title">Warning card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
+        <!-- TURISMO IMG -->
+        <div class="container img--Generales">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <img src="images/amazona.jpg" data-aos="fadeInLeftBig" class="img--G" alt="...">
                 </div>
-            </div> -->
-
-            <!-- <div class="card text-dark bg-info mb-3" style="max-width: 18rem;">
-                <div class="card-header">Grandes extensiones de océano</div>
-                <div class="card-body">
-                    <h5 class="card-title">Info card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
+                <div class="col-12  col-lg-4">
+                    <img src="images/choroni.jpg" data-aos="fadeInLeftBig" class="img--G" alt="...">
+                </div>
+                <div class="col-12  col-lg-4">
+                    <img src="images/andes--Vzla.jpg" data-aos="fadeInLeftBig" class="img--G" alt="...">
                 </div>
             </div>
-            <div class="card text-white bg-danger mb-3 float-center" style="max-width: 18rem;">
-                <div class="card-header">La Sangre derramada</div>
-                <div class="card-body">
-                    <h5 class="card-title">Danger card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
+        </div>
+        <!-- Refrán-->
+        <div class="textos--Varios">
+            <h1 class="titulos--Varios">Un país que abunda la alegría</h1>
+            <p class="parrafos--Varios"> El venezolano es un gentilicio que en cada esquina tiene un
+                amigo, sus abuelos se sientas en la calle con su respectiva silla de mimbre a conversar
+                entre amigos, donde el dominó implicitamente es el juego nacional, donde es una
+                tradición familiar reunirse los días previos a <strong class="letras--Amarillas">navidad</strong> a
+                hacer las deseadas hallacas, acompañadas
+                de un proceso minucioso donde cada una integrante de la familia es una parte fundamental
+                y activa del proceso de creación. Donde los viajes a la playa en familia son más comunes
+                que las tristezas.
+                <br>
+                <strong class="letras--Amarillas">Un país donde el panadero era portugués, el
+                    comerciante sirio, árabe o colombiano, los dueños de los supermercados eran
+                    chinos,etc.</strong> Un país donde la peor cosa que puedes decir es un chinazo, pero
+                los panas siempre los esperan para reírse con ganas. Un país que lo detiene por completo
+                un partido de béisbol, que siente polar cómo una marca familiar, al sonido de guaco y
+                vos veis. Un país que cree en Dios desde cada rincón, un país donde las risas son el
+                sound train de cada calle.
+            </p>
+        </div>
+        <div class="container img--Generales">
+            <div class="row">
+                <div class="col-12  col-lg-4 ">
+                    <img src="images/alegria--Venezolano.jpg" data-aos="fadeInLeftBig" class="img--G" alt="...">
                 </div>
-            </div> -->
-            <!-- <div class="card bg-light mb-3" style="max-width: 18rem;">
-                <div class="card-header">Header</div>
-                <div class="card-body">
-                    <h5 class="card-title">Light card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
+                <div class="col-12  col-lg-4">
+                    <img src="images/alegria--Venezolanos4.jpg" data-aos="fadeInLeftBig" class="img--G" alt="...">
+                </div>
+                <div class="col-12  col-lg-4">
+                    <img src="images/alegriaVzla.jpg" data-aos="fadeInLeftBig" class="img--G" alt="...">
                 </div>
             </div>
-
-
-             imagenes con texto alado  -->
-            <!-- <div>
-                <img class="caracteristicas--Img" src="images/alegriaVzla.jpg">
-                <p class="texto--Caracteristicas">Un país donde se respira alegría en cada rincón lorem</p>
-            </div>
-            <div>
-                <img class="caracteristicas--Img" src="images/hallacasVzla.jpg">
-                <p class="texto--Caracteristicas">Un país donde la familia es un valor fundamental</p>
-            </div>
-            <div>
-                <img class="caracteristicas--Img" src="images/juanesVzla.jpg">
-                <p class="texto--Caracteristicas">Donde los sabados eran de playa</p>
-            </div> -->
-
-
+        </div>
     </main>
-
-
     <footer>
-        <hr id="división">
-        &copy; 2021 Alondra Martínez
+        <hr id="division">
+        <div class="container d-flex justify-content-center">
+            <div class="row">
+                <div class="col-12 letras">
+                    <p> &copy; 2021 Alondra Martínez <br>
+                        Buenos Aires - Argentina<br>
+                        psicoalondramartinez@gmail.com</p>
+                </div>
+            </div>
     </footer>
     <!-- JQUERY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- WOW -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-        crossorigin="anonymous"></script>
-    <script>
-        new WOW().init();
-    </script>
+    <!--AOS-->
+    <script src=" https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script>AOS.init({
+            offset: 100,
+            duration: 1000
+        });</script>
     <!-- CDN DE FONTAWESOME -->
     <script src="https://kit.fontawesome.com/42b0028a54.js" crossorigin="anonymous"></script>
     <!-- SCRIPT BOOTSTRAP -->

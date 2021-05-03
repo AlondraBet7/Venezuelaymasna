@@ -1,6 +1,6 @@
 @charset "UTF-8";
 * {
-  margin: 1px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif; }
@@ -34,12 +34,12 @@ body {
         margin: 0 1.6rem; }
         body header .navbar .nav-link:hover {
           display: inline-block;
-          animation: heartBeat;
+          animation: fadeOutUp;
           animation-duration: 4s; }
       body header .navbar .seccion--Uno:hover {
         color: #fdf90d !important; }
       body header .navbar .seccion--Dos:hover {
-        color: #110dfd !important; }
+        color: #141274 !important; }
       body header .navbar .seccion--Tres:hover {
         color: #eb0b0b !important; }
       body header .navbar .seccion--Cuatro:hover {
@@ -60,7 +60,7 @@ body {
     color: black;
     display: block;
     font-size: 4em;
-    margin-block-start: 25%;
+    margin-block-start: 30%;
     margin-block-end: 10%;
     font-weight: bold;
     text-align: center; }
@@ -101,12 +101,13 @@ body {
     color: #fdf90d; }
   body .img--Generales {
     margin: 3em 8em;
-    display: flex; }
+    display: flex;
+    justify-content: space-between; }
     body .img--Generales .img--G {
+      margin: 2px;
       border-radius: 25px;
-      margin: 15px 30px;
       width: 300px;
-      height: auto; }
+      height: 250px; }
   body .caracteristicas--Img {
     width: 300px;
     height: auto;
@@ -151,7 +152,7 @@ body {
       body .textos--Varios .parrafos--Varios .letras--Amarillas {
         color: #fdf90d; }
       body .textos--Varios .parrafos--Varios .letras--Azules {
-        color: #110dfd; }
+        color: #141274; }
       body .textos--Varios .parrafos--Varios .letras--Rojas {
         color: #eb0b0b; }
   body .video--Pag {
@@ -172,45 +173,59 @@ body {
       margin: 0 50px;
       width: 300px;
       height: auto; }
-  body .form--Contac {
-    float: right !important; }
-  body .mb-3 {
-    width: 50% !important;
-    height: 70% !important; }
-  body .titulo--Form {
-    font-weight: 400;
-    color: #fdf90d; }
-  body .form {
-    width: 400px !important;
-    margin: 0 400px; }
-  body .form--Btn {
-    margin: 0 400px; }
-  body .botones {
-    display: flex; }
+  body .tarjetaAzul {
+    background-color: #141274 !important; }
+  body .imgContac {
+    width: 550px;
+    height: 550px;
+    border-radius: 5%; }
+  body #contacto {
+    text-align: center;
+    padding: 10px; }
   body footer {
     font-size: 20px;
     color: #636060;
-    text-align: center; }
-    body footer #division {
+    text-align: center;
+    position: relative; }
+    body footer .icon--Redes {
+      width: 60px;
+      height: 60px;
+      color: #f3f3f3; }
+    body footer .letras {
+      color: #636060;
+      font-size: 20px; }
+  @media (max-width: 576px) {
+    body #bienvenidos #chavismo {
+      max-width: 60%;
+      overflow: hidden;
+      -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 1;
+      order: 1;
+      object-fit: cover;
+      -o-object-position: center;
+      object-position: center; }
+      body #bienvenidos #chavismo .tresponsive-Inicio {
+        font-size: 100px; }
+    body .titulos--Responsive {
       width: 100%;
-      color: #636060; }
-
-@media (max-width: 576px) {
-  .padre--responsive {
-    width: 100%;
-    position: flex;
-    flex-direction: column;
-    margin: 2% 25%; }
-  .mb-3 {
-    margin: 0 50px; }
-  .form-floating {
-    margin: 0 50px; }
-  .btn--Uno {
-    margin: 0 50px; }
-  .btn--Dos {
-    margin: 0 20px; }
-  .imagen--Ensueño {
-    display: none; }
-  .tarjeta--Ensueño {
-    width: 100% !important;
-    height: auto; } }
+      position: flex;
+      flex-direction: column;
+      margin: 2% 25%; }
+    body .desparece--Responsive {
+      display: none; }
+    body .mb-3 {
+      margin: 0 50px; }
+    body .form-floating {
+      margin: 0 50px;
+      width: 392px; }
+    body .botones {
+      margin: 0 0 0 50px; }
+    body .imagen--Ensueño {
+      display: none; }
+    body .tarjeta--Ensueño {
+      width: 100% !important;
+      height: auto; }
+    body .imgContac {
+      display: none; }
+    body footer {
+      text-align: center; } }

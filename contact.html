@@ -22,8 +22,9 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- ENLACE CON CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- CDN ANIMATE  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- AOS Animations CSS -->
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css " />
+    <head>
 </head>
 
 <body>
@@ -66,63 +67,55 @@
     </header>
 
     <main>
-        <!-- <div class="container contacto">
+        <section class="container d-flex">
             <div class="row">
-                <div class="col-6 posicionUno">
-                    <img src="images/iconoContacto.svg" alt="">
+                <div class="col">
+                    <img class="imgContac"   data-aos="fadeInLeftBig" src="images/roraima.jpg" alt="">
                 </div>
-                <div class="col-6 posicionDos">
-                    <div id="responsive--Contact form--Contac">
-                        <div class="mb-3 form">
-                            <label for="formGroupExampleInput" class="form-label text-light">Nombre y apellido</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput"
-                                placeholder="Maria Gimenez">
-                        </div>
-                        <div class="form-floating form">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                style="height: 200px"></textarea>
-                            <label for="floatingTextarea2 text-light">Escribe tu mensaje</label>
-                        </div>
-                        <button type="button" class="btn btn-primary form--Btn btn--Uno">Borrar</button>
-                        <button type="button" class="btn btn-dark form--Btn btn--Dos">Enviar</button>
+                <div class="col responsive--Contact form--Contac">
+                    <div class="mb-3 form">
+                        <label for="formGroupExampleInput" class="form-label text-light">Nombre y apellido</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Maria Gimenez">
+                    </div>
+                    <div class="form-floating form">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                            style="height: 400px; width: 400px;"></textarea>
+                        <label for="floatingTextarea2 text-light">Escribe tu mensaje</label>
+                    </div>
+                    <div class="botones">
+                        <button type="button" class="btn btn-primary form--Btn ">Borrar</button>
+                        <button type="button" class="btn btn-dark form--Btn">Enviar</button>
                     </div>
                 </div>
-            </div> -->
-        <!-- 
-        </div> -->
-        <div id="responsive--Contact form--Contac">
-            <div class="mb-3 form">
-                <label for="formGroupExampleInput" class="form-label text-light">Nombre y apellido</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Maria Gimenez">
             </div>
-            <div class="form-floating form">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                    style="height: 200px"></textarea>
-                <label for="floatingTextarea2 text-light">Escribe tu mensaje</label>
-            </div>
-            <button type="button" class="btn btn-primary form--Btn btn--Uno">Borrar</button>
-            <button type="button" class="btn btn-dark form--Btn btn--Dos">Enviar</button>
-            <!-- <div class="container botones">
-                <div class="row">
-                    <div class="col"> <button type="button" class="btn btn-primary form--Btn btn--Uno">Borrar</button>
-                    </div>
-                    <div class="col"><button type="button" class="btn btn-dark form--Btn btn--Dos">Enviar</button></div>
-                </div>
-            </div> -->
-
+        </section>
     </main>
 
     <footer>
         <hr id="division">
-        &copy; 2021 Alondra Martínez
+        <div class="container d-flex justify-content-center">
+            <div class="row">
+                <div class="col-12 letras">
+                    <p> &copy; 2021 Alondra Martínez <br>
+                        Buenos Aires - Argentina<br>
+                        psicoalondramartinez@gmail.com</p>
+                </div>
+            </div>
     </footer>
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--AOS-->
+    <script src=" https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script>AOS.init({
+            offset: 100,
+            duration: 1000
+        });</script>
     <!-- CDN DE FONTAWESOME -->
     <script src="https://kit.fontawesome.com/42b0028a54.js" crossorigin="anonymous"></script>
     <!-- SCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>

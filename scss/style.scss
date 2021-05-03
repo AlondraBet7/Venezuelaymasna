@@ -1,7 +1,7 @@
 @import "variables/colors";
 
 * {
-    margin: 1px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Source Sans Pro", sans-serif;
@@ -46,7 +46,7 @@ body {
 
                 &:hover {
                     display: inline-block;
-                    animation: heartBeat;
+                    animation: fadeOutUp;
                     animation-duration: 4s;
                 }
             }
@@ -84,22 +84,6 @@ body {
         }
     }
 
-    //     .menu--Fixed {
-    //         position: fixed;
-    //         z-index: 1000;
-    //         top: 0;
-    //         //         width: 100%;
-    //         max-width: 2000;
-    //     }
-
-    // }
-
-    // .orden {
-    //     z-index: 0;
-    //     margin: 40px 30px;
-    //     display: block;
-    // }
-
     // SECCION VENEZUELA 
 
     // IMAGEN CON TRANSPARENCIA
@@ -120,7 +104,7 @@ body {
         color: $colorUno;
         display: block;
         font-size: 4em;
-        margin-block-start: 25%;
+        margin-block-start: 30%;
         margin-block-end: 10%;
         font-weight: bold;
         text-align: center;
@@ -174,18 +158,6 @@ body {
         font-weight: 600;
     }
 
-    //  TARJETAS 
-
-    // .tarjetas--Turismo {
-    //     display: flex !important;
-
-    //     .imagen--Turismo {
-    //         width: auto !important;
-    //         height: 200vh !important;
-    //         margin: 0 !important;
-    //     }
-    // }
-
     // FRASE VENEZOLANOS
     .texto--Refran {
         font-weight: 900;
@@ -199,58 +171,14 @@ body {
     .img--Generales {
         margin: 3em 8em;
         display: flex;
-
-
+        justify-content: space-between;
         .img--G {
+            margin: 2px;
             border-radius: 25px;
-            margin: 15px 30px;
             width: 300px;
-            height: auto;
+            height: 250px;
         }
     }
-
-    // imagenes Vzla
-    // .vzla--Linda {
-    //     width: 350px;
-    //     height: 200px;
-
-    // }
-
-    // .posicion {
-    //     margin: 0 !important;
-    // }
-
-    // posicionamiento
-    // .vzla--Lindados{
-    //     padding: 0 10%  !important;
-    // }
-    // texto bondades
-
-    // .text--Vzla {
-    //     float: right;
-
-
-    // .texto--Titulo {
-    //     margin: 50px 300px;
-    //     color: $colorCinco;
-    //     font-weight: 600;
-    //     color: $colorTres;
-    //     font-size: 40px;
-    //     display: inline;
-
-    // }
-
-    // .texto--Parrafo {
-    //     color: $colorCinco;
-    //     line-height: 2em;
-    // }
-
-    // }
-    // Tarjetas
-    // .card {
-    //     float: left;
-    //     margin: 30px 120px;
-    // }
 
     // imagenes con texto alado
     .caracteristicas--Img {
@@ -266,30 +194,6 @@ body {
         display: inline-block;
         vertical-align: center;
     }
-
-    // .caracteristicas--Img2 {
-    //     width: 300px;
-    //     height: auto;
-    //     margin: 40px 800px;
-
-    // }
-
-    // .texto--Caracteristicas2 {
-    //     font-size: 600;
-    //     margin: 40px 200px 70px 40px;
-    //     color: $colorCinco;
-    //     display: inline-block;
-    //     vertical-align: center;
-    //     clear: left;
-    // }
-    //ESTILOS CHAVISMO
-
-    // Definicion del fondo chavismo
-
-    //  imagenes sobre el chavismo 
-    // #fondo--Chavismo {
-    // background-color: $colorOcho; OJO COLOR ATRACTIVO
-    // }
 
     #chavismo {
         margin: 2% 0 !important;
@@ -356,26 +260,6 @@ body {
         text-align: center;
     }
 
-    // .chavismo {
-    //     display: flex;
-    //     margin: 20px;
-
-    //     .img--chavismoUno {
-    //         border-radius: 30%;
-    //         height: 400px;
-    //         width: 400px;
-    //         margin: 0 100px;
-    //     }
-
-    //     .img--chavismoDos {
-    //         border-radius: 30%;
-    //         height: 400px;
-    //         width: 400px;
-    //         margin: 0 100px;
-
-    //     }
-    // }
-
     // ESTILOS EMIGRACION
     // imagenes de emigracion masiva
     .seccion--Migracion {
@@ -405,60 +289,20 @@ body {
         }
     }
 
-    // ESTILOS CONTACT
-    // // pagina seccion contacto
-
-    // .contacto {
-    //     display: flex !important;
-    //     position: relative;
-
-    //     .posicionUno {
-    //         float: left;
-    //         width: 50%;
-    //         height: auto;
-    //     }
-
-    //     .posicionDos {
-    //         float: right;
-    //     }
-    // }
-
-
-
-
-    // .imgContac {
-
-    // }
-
-    .form--Contac {
-        float: right !important;
+    .tarjetaAzul {
+        background-color: $colorTres !important;
     }
 
-
-
-    .mb-3 {
-        width: 50% !important;
-        height: 70% !important;
+    .imgContac {
+        width: 550px;
+        height: 550px;
+        border-radius: 5%;
     }
 
-    .titulo--Form {
-        font-weight: 400;
-        color: $colorDos;
+    #contacto {
+        text-align: center;
+        padding: 10px;
     }
-
-    .form {
-        width: 400px !important;
-        margin: 0 400px;
-    }
-
-    .form--Btn {
-        margin: 0 400px;
-    }
-
-    .botones {
-        display: flex;
-    }
-
 
 
 
@@ -467,56 +311,78 @@ body {
         font-size: 20px;
         color: $colorSeis;
         text-align: center;
-
-        #division {
-            // border:30px;
-            width: 100%;
+        position: relative;
+        .icon--Redes {
+            width: 60px;
+            height: 60px;
+            color: $colorCinco;
+        }
+        .letras{
             color: $colorSeis;
-            // padding: 5px 0;
+            font-size: 20px;
         }
     }
-}
+   
+    @media (max-width: 576px) {
 
-// @media screen and (max-width: 576px) and (min-width: 480px) {
-//     body {
-//         margin: 1px;
-//         max-width: 576px;
+        // Responsive INDEX
+        #bienvenidos #chavismo {
+            max-width: 60%;
+            overflow: hidden;
+            -webkit-box-ordinal-group: 1;
+            -ms-flex-order: 1;
+            order: 1;
+            object-fit: cover;
+            -o-object-position: center;
+            object-position: center;
 
-//         .pobreza--Vzla2 {
-//             width: 40%;
-//         }
-//     }
-// }
-@media (max-width: 576px) {
-    .padre--responsive {
-        width: 100%;
-        position: flex;
-        flex-direction: column;
-        margin: 2% 25%;
-    }
+            .tresponsive-Inicio {
+                font-size: 100px;
+            }
 
-    .mb-3 {
-        margin: 0 50px;
-    }
+        }
 
-    .form-floating {
-        margin: 0 50px;
-    }
+        .titulos--Responsive {
+            width: 100%;
+            position: flex;
+            flex-direction: column;
+            margin: 2% 25%;
+        }
 
-    .btn--Uno {
-        margin: 0 50px;
-    }
+        .desparece--Responsive {
+            display: none;
+        }
 
-    .btn--Dos {
-        margin: 0 20px;
-    }
 
-    .imagen--Ensueño {
-        display: none;
-    }
+        .mb-3 {
+            margin: 0 50px;
+        }
 
-    .tarjeta--Ensueño {
-        width: 100% !important;
-        height: auto;
+        .form-floating {
+            margin: 0 50px;
+            width: 392px;
+        }
+
+        .botones {
+            margin: 0 0 0 50px;
+        }
+
+        .imagen--Ensueño {
+            display: none;
+        }
+
+        .tarjeta--Ensueño {
+            width: 100% !important;
+            height: auto;
+        }
+
+        .imgContac {
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+
+        }
     }
 }

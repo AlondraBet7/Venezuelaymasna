@@ -22,9 +22,16 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- ENLACE CON CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- CDN ANIMATE  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- AOS Animations CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css " />
 </head>
+<style>
+    @media (min-width: 576px) {
+        .ancho-80 {
+            width: 70vw;
+        }
+    }
+</style>
 
 <body>
     <header>
@@ -32,7 +39,6 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
 
             <div class="container-fluid">
-                <!-- <img class="imagenLogo" src="images/vzla--Pag.png" alt=""> -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -65,50 +71,124 @@
         </nav>
     </header>
     <main>
-      
-        <div class="textos--Varios">
-            <h2 class="titulos--Varios">Venezolanos destacados</h2>
-            <p class="parrafos--Varios">Chávez asumió el poder el 2 de febrero de 1999, con un país dividido por los dos
-                únicos partidos que para
-                entonces manejaban el país, con un pueblo desalentado por las <strong class="letras--Amarillas">desigualdad
-                    social</strong> y con
-                su frase célebre
-                los objetivos no fueron cumplidos, inicia por primera vez en Venezuela con el idílico camino del
-                socialismo, eliminando en el país la meritocracía y reforzando la soberbia rentista, y así como un
-                hombre que prometió lo <strong class="letras--Amarillas">desigualdad
-                    social</strong> más sublimes valores
-                humanos, nos arrancó de
-                las manos hasta la capacidad de
-                vivir dignamente Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem asperiores
-                quod nobis ducimus rem non error sit, architecto amet eum nulla nam mollitia <strong class="letras--Amarillas">desigualdad
-                    social</strong> doloribus laboriosam
-                quisquam eaque sunt fugiat dolor!
-                Dignissimos nobis sed vero veniam sint, ea magni enim, rem voluptatibus voluptatem debitis modi nihil
-                nemo totam odit fugiat iste illum <strong class="letras--Amarillas">desigualdad
-                    social</strong> mollitia
-                molestias minus! Vel
-                facilis temporibus eum dicta facere.
-                At ipsa et cum debitis dolore voluptatibus facilis adipisci distinctio doloribus expedita? Voluptatem
-                reiciendis laborum eius aliquid eveniet fugiat enim distinctio repellendus doloribus. Facilis odio aut
-                beatae distinctio error non.</p>
+ 
+        <div class="container d-flex mb-3 align-items-center justify-content-center ancho-80 w-100">
+            <div class="row">
+                <!-- columna izquierda  -->
+                <div class="col-12 col-lg-9">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 p-2">
+                            <article class="card h-100 bg-warning">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <img src="images/image-daniel.jpg" alt=""
+                                            class="border boder-secondary border-4 rounded-circle">
+                                        <div class="ps-3 mt-2">
+                                            <h5 class="m-0 h6 fw-bold">Daniel Perez</h5>
+                                            <p class="m-0 h6 fw-bold">Inmigrante en España.</p>
+                                        </div>
+                                    </div>
+                                    <p class="h6 fw-bold">Venezuela es el sueño de mi vida. Salí de Venezuela para ser mejor ciudadano, salí para mejorar la vida de mi familia, salí para aprender y aportar. </p>
+                                    <p class="fs-6 lh-1">Lo que más extraño de Venezuela es la comida de mi mamá, los abrazos de mi familia y los domingos familiares, sueño con país libre, en el que todos podamos volver.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-lg-4 p-2">
+                            <article class="card h-100 tarjetaAzul text-white">
+                                <div class="card-body">
+                                    <div class="d-flex mb-3">
+                                        <img src="images/image-jeanette.jpg" alt=""
+                                            class="border boder-secondary border-4 rounded-circle">
+                                        <div class="ps-3 mt-2">
+                                            <h5 class="m-0 h6 fw-bold">Andrea Stio</h5>
+                                            <p class="m-0 h6 fw-bold">Inmigrante en Chile.</p>
+                                        </div>
+                                    </div>
+                                    <p class="fs-6 lh-1">Yo soy ingeniera para mí ha sido extraordinario poder aportar lo que sé y que además se me trate con dignidad, en Venezuela pasé mucho trabajo por los problemas con la comida, extraño a mí familia y a mi perro.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-lg-4 p-2">
+                            <article class="card h-100 bg-warning">
+                                <div class="card-body">
+                                    <div class="d-flex mb-3">
+                                        <img src="images/image-jonathan.jpg" alt=""
+                                            class="border boder-secondary border-4 rounded-circle">
+                                        <div class="ps-3 mt-2">
+                                            <h5 class="m-0 h6 fw-bold">Pedro Acevedo</h5>
+                                            <p class="m-0 h6 fw-bold">Inmigrante en Perú.</p>
+                                        </div>
+                                    </div>
+                                    <p class="fs-6 lh-1">Para mi Venezuela es el amor de mi vida y a pesar de que tengo mi propio negocio en Lima, sueño todos los días con volver, pero estoy muy agradecido con la oportunidad que nos dan estos pasíses para trabajar y realizarnos.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-lg-8 p-2">
+                            <article class="card h-100 tarjetaAzul text-white">
+                                <div class="card-body">
+                                    <div class="d-flex mb-3">
+                                        <img src="images/image-patrick.jpg" alt=""
+                                            class="border boder-secondary border-4 rounded-circle">
+                                        <div class="ps-3 mt-2">
+                                            <h5 class="m-0 h6 fw-bold">Dayana Gimenez</h5>
+                                            <p class="m-0 h6 fw-bold">Heroína en Venezuela.</p>
+                                        </div>
+                                    </div>
+                                    <p class="h6 fw-bold">Deseo que mis hijos crezcan en mi tierra, deseo poder darles todo lo que tengo y deseo que mi vida sea para Venezuela.</p>
+                                    <p class="fs-6 lh-1">Todos los días rezo paara que se de un cambio en mi país yo tengo la esperanza que eso va a pasar y tendremos de nuevo a un tesosro entre las manos.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <!-- columna derecha  -->
+                <div class="col-12 col-lg-3 ">
+                    <article class="card h-100 bg-danger">
+                        <div class="card-body">
+                            <div class="d-flex mb-3">
+                                <img src="images/image-kira.jpg" alt=""
+                                    class="border boder-secondary border-4 rounded-circle">
+                                <div class="ps-3 mt-2">
+                                    <h5 class="m-0 h6 fw-bold">Olga Alvarez</h5>
+                                    <p class="m-0 h6 fw-bold">Heroína en Venezuela.</p>
+                                </div>
+                            </div>
+                            <p class="h6 fw-bold">Hablar de Venezuela es hablar de tierra de gentilicio extraordinariamente agradable, valientes e inteligentes con una natural Resiliencia que guarda un estrecho vínculo con el amor de Dios, capaces de reírse de cualquier derrota y afrontar con energía cualquier reto y circunstancias. </p>
+                            <p class="fs-6 lh-1">País con potencia agricultura y ganado, con yacimientos de oro petróleo bausita coltra, bronce etc... Con playas hermosas y con el potente salto Angel.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </div>
-        <div class="venezolanos">
-            <img src="images/edgarRamirez.jpg" class="venezolanos--R " alt="...">
-            <img src="images/franco.jpg" class="venezolanos--R " alt="">
-        </div>
+
+
     </main>
 
     <footer>
-        <hr id="división">
-        &copy; 2021 Alondra Martínez
+        <hr id="division">
+        <div class="container d-flex justify-content-center">
+            <div class="row">
+                <div class="col-12 letras">
+                    <p> &copy; 2021 Alondra Martínez <br>
+                        Buenos Aires - Argentina<br>
+                        psicoalondramartinez@gmail.com</p>
+                </div>
+            </div>
     </footer>
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--AOS-->
+    <script src=" https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script>AOS.init({
+            offset: 100,
+            duration: 1000
+        });</script>
     <!-- CDN DE FONTAWESOME -->
     <script src="https://kit.fontawesome.com/42b0028a54.js" crossorigin="anonymous"></script>
     <!-- SCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>
