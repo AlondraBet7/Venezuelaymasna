@@ -102,12 +102,17 @@ body {
   body .img--Generales {
     margin: 3em 8em;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    position: relative; }
     body .img--Generales .img--G {
       margin: 2px;
       border-radius: 25px;
       width: 300px;
       height: 250px; }
+    body .img--Generales .posicionUno {
+      left: 100px !important; }
+    body .img--Generales .posicionTres {
+      right: 100px !important; }
   body .caracteristicas--Img {
     width: 300px;
     height: auto;

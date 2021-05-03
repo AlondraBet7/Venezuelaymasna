@@ -172,11 +172,18 @@ body {
         margin: 3em 8em;
         display: flex;
         justify-content: space-between;
+        position: relative;
         .img--G {
             margin: 2px;
             border-radius: 25px;
             width: 300px;
             height: 250px;
+        }
+        .posicionUno{
+            left: 100px !important;
+        }
+        .posicionTres{
+            right: 100px !important;
         }
     }
 
