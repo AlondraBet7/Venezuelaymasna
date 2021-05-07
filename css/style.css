@@ -7,7 +7,8 @@
 
 body {
   background-color: #383737;
-  width: 100%; }
+  width: 100vw !important;
+  height: auto; }
   body header {
     margin: 3% 0;
     justify-content: center;
@@ -49,15 +50,15 @@ body {
   body #bienvenidos {
     margin: 0 !important;
     background: linear-gradient(to right, rgba(94, 90, 90, 0.609), rgba(0, 0, 0, 0)), url(../images/losRoques4.jpg);
-    width: 100vw !important;
-    height: 50% 50vh;
-    background-position: center center;
+    max-width: 100vw !important;
+    height: 90% 90vh;
+    background-position: center;
     background-size: cover;
     background-size: 100% 100vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
     position: relative;
-    overflow: hidden; }
+    overflow-x: hidden; }
   body .primer--Titulo {
     color: black;
     display: block;
@@ -98,23 +99,22 @@ body {
   body .texto--Refran {
     font-weight: 900;
     font-size: 40px;
-    margin: 50px 50px;
+    margin: 50px 0;
     text-align: center;
     color: #fdf90d; }
   body .img--Generales {
-    margin: 3em 8em;
+    margin: 2em 0;
     display: flex;
-    justify-content: space-between;
-    position: relative; }
+    position: relative;
+    justify-content: space-evenly;
+    left: 8%;
+    flex-direction: column;
+    flex-wrap: wrap; }
     body .img--Generales .img--G {
-      margin: 2px;
+      margin: 0 2px;
       border-radius: 25px;
       width: 300px;
       height: 250px; }
-    body .img--Generales .posicionUno {
-      left: 100px !important; }
-    body .img--Generales .posicionTres {
-      right: 100px !important; }
   body .caracteristicas--Img {
     width: 300px;
     height: auto;
@@ -136,7 +136,7 @@ body {
     position: relative;
     overflow: hidden; }
   body #nuevos--Burgueses {
-    margin: 3em 8em;
+    margin: 3em 0;
     display: flex; }
     body #nuevos--Burgueses .burgueses {
       margin: 15px 100px;
@@ -144,13 +144,13 @@ body {
       height: auto; }
   body .textos--Varios {
     color: #f3f3f3;
-    margin: 3em 8em; }
+    margin: 3em 2em; }
     body .textos--Varios .titulos--Varios {
       font-weight: 900;
       font-size: 40px;
       text-align: center; }
     body .textos--Varios .parrafos--Varios {
-      margin: 3em 0;
+      margin: 3em 4em;
       font-size: 20px;
       font-weight: 600;
       line-height: 50px;
@@ -172,7 +172,7 @@ body {
       height: auto;
       margin: 0 50px; }
   body .venezolanos {
-    margin: 3em 8em;
+    margin: 3em 0;
     display: flex;
     justify-content: center; }
     body .venezolanos .venezolanos--R {
@@ -203,8 +203,8 @@ body {
       font-size: 20px; }
   @media (max-width: 576px) {
     body #bienvenidos #chavismo {
-      max-width: 60%;
-      overflow: hidden;
+      max-width: 100vw;
+      overflow-x: hidden;
       -webkit-box-ordinal-group: 1;
       -ms-flex-order: 1;
       order: 1;
@@ -212,9 +212,23 @@ body {
       -o-object-position: center;
       object-position: center; }
       body #bienvenidos #chavismo .tresponsive-Inicio {
-        font-size: 20px;
-        margin-block-start: 10%;
-        margin-block-end: 20%; }
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        color: white;
+        text-align: center; }
+    body .card--Responsive {
+      margin: 0 5% !important; }
+    body .img--Res {
+      width: 55vw;
+      display: flex;
+      flex-direction: column;
+      left: 20%; }
+    body .img--ResDos {
+      margin: 5% 0; }
+    body .texto--Responsive {
+      max-width: 100vw;
+      margin: 0 !important; }
     body .titulos--Responsive {
       width: 100%;
       position: flex;
@@ -238,3 +252,27 @@ body {
       display: none; }
     body footer {
       text-align: center; } }
+  body .ancho-80 {
+    width: 70vw;
+    margin: 0 !important; }
+  @media (max-width: 360px) {
+    body #bienvenidos {
+      max-width: 100vw;
+      height: 100% 100vh;
+      background-position: center;
+      background-size: cover;
+      background-size: 100% 100vh;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      position: relative;
+      overflow-x: hidden; }
+      body #bienvenidos .tresponsive-Inicio {
+        font-size: 200%; }
+    body .card--Responsive {
+      width: 50vw !important;
+      height: auto; }
+    body .carrusel--Venezuela {
+      display: none; }
+    body .texto--Responsive {
+      margin-left: 2%;
+      margin-right: 2%; } }
