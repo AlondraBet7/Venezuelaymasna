@@ -32,6 +32,9 @@ body {
             background-color: $colorSiete !important;
             float: center;
             display: flex;
+            .letraNegra{
+                color: $colorCinco !important;
+            }
 
             .imagenLogo {
                 width: 150px;
@@ -360,24 +363,18 @@ body {
     // estilos footer
     footer {
         font-size: 20px;
-        color: $colorSeis;
+        color: $colorCinco;
         text-align: center;
         position: relative;
 
-        .icon--Redes {
-            width: 60px;
-            height: 60px;
-            color: $colorCinco;
-        }
-
         .letras {
-            color: $colorSeis;
+            color: $colorCinco;
             font-size: 20px;
         }
     }
 }
 
-@media (max-width: 576px) {
+@media  (max-width: 576px) {
 
     // Responsive INDEX
     .bienvenidos .chavismo {
@@ -408,7 +405,7 @@ body {
         width: 55vw;
         display: flex;
         flex-direction: column;
-        left: 20%;
+        left: 50%;
         // -webkit-text-size-adjust: 0;
         // --bs-gutter-x: 0;
         // -webkit-tap-highlight-color: none;
@@ -474,7 +471,7 @@ body {
 
 
 
-@media (max-width: 360px) {
+@media screen and  (max-width: 360px)   {
     .bodyResponsive {
         overflow: hidden;
         margin: 0;
@@ -527,8 +524,9 @@ body {
 
     .imageRes {
         // display: inline-block;
-        align-self: center !important;
-        width: 2vw;
+        // align-self: center !important;
+        // width: 2vw;
+        left: 100% !important;
         // max-width: 30vw !important;
 
         // .imgW {

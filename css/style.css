@@ -6,7 +6,7 @@
   font-family: "Source Sans Pro", sans-serif; }
 
 body {
-  background-color: #383737;
+  background-color: #6d6868;
   width: 100%  !important;
   height: auto; }
   body header {
@@ -23,9 +23,11 @@ body {
       margin: 0 5%;
       font-weight: 600;
       font-size: 20px;
-      background-color: #383737 !important;
+      background-color: #6d6868 !important;
       float: center;
       display: flex; }
+      body header .navbar .letraNegra {
+        color: #030303 !important; }
       body header .navbar .imagenLogo {
         width: 150px;
         height: auto;
@@ -122,7 +124,7 @@ body {
   body .texto--Caracteristicas {
     font-size: 600;
     margin: 40px 200px 70px 40px;
-    color: #f3f3f3;
+    color: #030303;
     display: inline-block;
     vertical-align: center; }
   body .chavismo {
@@ -143,7 +145,7 @@ body {
       width: 300px;
       height: auto; }
   body .textos--Varios {
-    color: #f3f3f3;
+    color: #030303;
     margin: 3em 2em; }
     body .textos--Varios .titulos--Varios {
       font-weight: 900;
@@ -214,15 +216,11 @@ body {
     text-align: center; }
   body footer {
     font-size: 20px;
-    color: #636060;
+    color: #030303;
     text-align: center;
     position: relative; }
-    body footer .icon--Redes {
-      width: 60px;
-      height: 60px;
-      color: #f3f3f3; }
     body footer .letras {
-      color: #636060;
+      color: #030303;
       font-size: 20px; }
 
 @media (max-width: 576px) {
@@ -245,7 +243,7 @@ body {
     width: 55vw;
     display: flex;
     flex-direction: column;
-    left: 20%; }
+    left: 50%; }
   .img--ResDos {
     margin: 5% 0; }
   .texto--Responsive {
@@ -278,7 +276,7 @@ body {
     width: 70vw;
     margin: 0 !important; } }
 
-@media (max-width: 360px) {
+@media screen and (max-width: 360px) {
   .bodyResponsive {
     overflow: hidden;
     margin: 0; }
@@ -311,8 +309,7 @@ body {
   .cuerpo {
     width: 2%; }
   .imageRes {
-    align-self: center !important;
-    width: 2vw; }
+    left: 100% !important; }
   .delimitador {
     width: 250px !important;
     margin: 0; }
